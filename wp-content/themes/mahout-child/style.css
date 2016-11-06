@@ -30,7 +30,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: #19a0c1;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -42,7 +42,7 @@ body {
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -56,8 +56,115 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
+div#main{
+    height:700px;
+    background-image: url(./img/innovation.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+div#main img{
+    width:220px;
+    padding-left: 100px;
+}
+
+div#main span{
+    float:right;
+    padding-top: 60px;
+    padding-right: 150px;
+}
+
+ul#menu-primary li{
+    list-style: none;
+}
+
+ul#menu-primary li a{
+    color:#fff;
+}
+
+a.closebtn{
+    color:#fff;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+/*  Start icon Styles Front Page */
+.circles{
+    height: 500px;
+    padding-top: 80px
+}
+
+.Radius-section {
+    border-radius: 50%;
+    border: gray 1px solid;
+    height:200px;
+    width:200px;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+h4.threecolumnTitle {
+    font-size: 40px;
+}
+
+div.Radius-section :hover{
+    color: #19a0c1;
+
+}
+.text-center{
+    height: 200px;
+}
+
+
+span.FontAwesome{
+    position: relative;
+    top: 30%;
+    
+    transform: translate(-50%,-50%);
+
+}
+.FontAwesome i{
+    color:gray;
+    font-size: 6em;
+}
+
+
+/* Mountain sections styles  */
+
+div.mountainSection{
+    height:700px;
+    background-image: url(./img/mountain2.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    
+}
+.mountainText{
+    padding-top: 250px;
+    font-size: 20px;
+    color:#fff;
+   
+
+}
+
+/* Elephant Section */
+
+.elephant{
+    height:800px;
+    background-image: url(./img/elephant.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.elephantText{
+    padding-top: 300px;
+    color:#fff;
+    font-size: 80px;
 }

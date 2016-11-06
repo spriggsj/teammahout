@@ -4,17 +4,7 @@
   <meta charset="UTF-8">
   <title>Team Mahout</title>
   
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <?php wp_head(); ?>
 
@@ -34,7 +24,10 @@ function closeNav() {
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<img src="/wp-content/themes/mahout-child/img/mahoutlogo.png">
+  <span style="color:#19a0c1;font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
 </div>
 </header>
+
+
     
