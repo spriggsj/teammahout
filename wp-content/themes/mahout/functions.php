@@ -46,7 +46,7 @@ function mahout_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'mahout' ),
 	) );
-
+	
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
