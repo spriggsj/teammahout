@@ -34,6 +34,8 @@
   </div>
 
 <div id="main">
-<img src="/wp-content/themes/mahout-child/img/mahoutlogo.png">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mahoutlogo.png">
+<h1>With Team Mahout Enhance Your Company With Our Web Development, Marketing, and Design</h1>
 </div>
+
 </header>
