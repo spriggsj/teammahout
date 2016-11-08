@@ -50,8 +50,15 @@ time, mark, audio, video {
 /* end of reset */
 
 
- body {
-     font-family: "Lato", sans-serif;
+
+
+ h1{
+	 font-family: 'Oswald', sans-serif;
+ }
+
+ p{
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 100;
  }
 
  /* nav styles */
@@ -270,57 +277,119 @@ div#main img{
 	color: gray;
 	margin: 20px 40px 0 0;
 	float: right;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 
 }
 
 
 /*  Start icon Styles Front Page */
 .services{
-    padding: 75px;
+    padding: 95px 0;
 		text-align: center;
 }
 
 
 
-.services .icon{
-	border: 3px solid #818384;
+.services .content .icon{
+	border: 2px solid #818384;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 90px;
+	height: 90px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
+	-webkit-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	transition: all .7s ease;
+
 }
+
+.services h1{
+	text-transform: uppercase;
+	color: #7f8182;
+	font-size: 25px;
+}
+
 
 .services .icon i{
 	color: #818384;
-	font-size: 35px;
+	-webkit-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	transition: all .7s ease;
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
+.services p{
+	margin: 0 25px;
+}
 
+.services .content:hover .icon{
+	background-color: #19a0c1;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	transition: all .7s ease;
+}
 
-
-
-
-
-
-
-
+.services .content:hover i{
+	-webkit-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	transition: all .7s ease;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+	color: white;
+}
 
 
 /* Elephant Section */
 
 .elephant{
-    height:800px;
+    height:700px;
     background-image: url(./img/elephant.png);
     background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
+    background-size:cover;
 }
 
-.elephantText{
-    padding-top: 300px;
-    color:#fff;
-    font-size: 80px;
+.elephant h1{
+	text-transform: uppercase;
+	font-size: 70px;
+	color: #fff;
+	text-align: right;
+}
+
+.elephant__col{
+	top: 364px;
+	right: 30px;
+}
+
+.elephant__button{
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 25px;
+	color: gray;
+	float: right;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
 }

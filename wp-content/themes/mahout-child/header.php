@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Team Mahout</title>
-  
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:100,300,300i,400" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <?php wp_head(); ?>
