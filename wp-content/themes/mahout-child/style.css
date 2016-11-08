@@ -248,6 +248,15 @@ div#main img{
 
 }
 
+#main h1{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #19a0c1;
+	position: relative;
+	top: 350px;
+	left: 216px;
+}
+
 
 
 .mountain__container p{
@@ -364,7 +373,7 @@ div#main img{
 /* Elephant Section */
 
 .elephant{
-    height:700px;
+    height:460px;
     background-image: url(./img/elephant.png);
     background-repeat:no-repeat;
     background-size:cover;
@@ -378,7 +387,7 @@ div#main img{
 }
 
 .elephant__col{
-	top: 364px;
+	top: 154px;
 	right: 30px;
 }
 
@@ -392,4 +401,71 @@ div#main img{
 	font-family: 'Oswald', sans-serif;
 	font-size: 15px;
 	text-transform: uppercase;
+}
+
+footer{
+	height: 370px;
+	width: 100%;
+	background-color: #19a0c1;
+	color: white;
+}
+
+.socialmedia__icons{
+	margin-left: 180px;
+	padding-top: 60px;
+}
+
+
+.socialmedia__icons i span{
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+.socialmedia__icons i{
+	font-size: 20px;
+}
+
+footer hr{
+	border-top: 1px solid #148496;
+	margin-top: 9px;
+}
+
+.homebase h1{
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.homebase i{
+	margin-right: 8px;
+}
+
+.homebase p{
+	font-size: 15px;
+}
+
+.ourstory h1{
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.ourstory p{
+	font-size:15px;
+}
+
+.mahout__footer__logo img{
+	width: 16 0px;
+	height: 180px;
+	position: relative;
+
+}
+
+.newsletter h1{
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.newsletter p{
+	font-size: 15px;
 }

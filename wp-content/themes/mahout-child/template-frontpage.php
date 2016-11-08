@@ -26,7 +26,7 @@
           </div>
           <h1>design</h1>
           <p>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        Our in house custom designer will transform your ideas into a beautifully functioning and fluid site. Team Mahout utilizes an intricate process to evaluate your vision and incorporates proven design principles to ensure your site is consistent with your unique brand.
           </p>
         </div>
         <div class="col-lg-4 content">
@@ -35,7 +35,7 @@
           </div>
           <h1>social media</h1>
           <p>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Our expert team provides multiple levels of involvement with you social media accounts. It doesn't matter if you are a novice or a seasoned professional we are confident that we will provide value to your campaigns.
           </p>
         </div>
         <div class="col-lg-4 content">
@@ -44,7 +44,7 @@
           </div>
           <h1>Marketing</h1>
           <p>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          What is a website without great marketing? It doesn't matter if your site is for creating awareness, Brand building, or commerce. You will find our marketing team is top notch.
           </p>
         </div>
         </div>
