@@ -259,12 +259,12 @@ div#main img{
 
 
 
-.mountain__container p{
-	text-align: right;
-		margin: 50px 40px 0px 200px;
-		font-size: 18px;
-		color: #fff;
-
+.mountain__container p {
+   
+    margin: 50px 40px 0px 200px;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 200px;
 }
 
 .mountain__container{
@@ -409,7 +409,9 @@ footer{
 	background-color: #19a0c1;
 	color: white;
 }
-
+footer a{
+	color: white;
+}
 .socialmedia__icons{
 	margin-left: 180px;
 	padding-top: 60px;
