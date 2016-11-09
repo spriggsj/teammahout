@@ -54,9 +54,9 @@
         <div class="container-fluid elephant">
             <div class="row">
               <div class="col-lg-12 elephant__col">
-                <h1>We Build Your Dreams</h1>
-                <p>Don't let your dreams just be dreams.</p>
-                <a href="#" class="elephant__button">Make Your Dream</a>
+                <h1>We Build Dreams</h1>
+                <p>Into Lucrative Business</p>
+                <a href="#" class="elephant__button">Pursue Your's</a>
               </div>
 
             </div>
