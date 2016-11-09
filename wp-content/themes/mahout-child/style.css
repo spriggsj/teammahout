@@ -247,6 +247,14 @@ div#main img{
     top: 40px;
 
 }
+div#page img{
+	width:110px;
+	margin-left: 200px;
+    
+}
+div#page h1{
+	display:none;
+}
 
 #main h1{
 	font-size: 15px;
@@ -625,4 +633,10 @@ footer{
     left: 106px;
 }
 
+}
+.aboutTop{
+	padding-top: 20px;
+}
+.aboutBottom{
+	padding-bottom: 20px;
 }
