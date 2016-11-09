@@ -9,8 +9,9 @@
 
                   <div class="col-lg-12">
                         <p>
-                          We are a small web development company. We have developers who can code anything. We have a designer with 10 plus years of experience who is modern and stays in front of the trends. So what makes us different? How do we stand out from the 10’s of thousands of other web developers out there?
-                          
+                        Usually, a mahout starts as a boy when he is assigned an elephant early in its life. They remain bonded to each other throughout their lives..
+                        Our in house custom designer will transform your ideas into a beautifully functioning and fluid site. Team Mahout utilizes an intricate process to evaluate your vision and incorporates proven design principles to ensure your site is consistent with your unique brand.
+
                          </p>
                          <a href="#" class="button">Learn More</a>
                   </div>
@@ -19,7 +20,7 @@
 
 		<div class="container services">
       <div class="row">
-        <div class="col-lg-4 content">
+        <div class="col-sm-4 col-md-4 col-lg-4 content">
           <div class="icon">
             <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
           </div>
@@ -28,7 +29,7 @@
         Our in house custom designer will transform your ideas into a beautifully functioning and fluid site. Team Mahout utilizes an intricate process to evaluate your vision and incorporates proven design principles to ensure your site is consistent with your unique brand.
           </p>
         </div>
-        <div class="col-lg-4 content">
+        <div class="col-sm-4 col-md-4 col-lg-4 content">
           <div class="icon">
             <i class="fa fa-users fa-3x" aria-hidden="true"></i>
           </div>
@@ -37,7 +38,7 @@
           Our expert team provides multiple levels of involvement with you social media accounts. It doesn't matter if you are a novice or a seasoned professional we are confident that we will provide value to your campaigns.
           </p>
         </div>
-        <div class="col-lg-4 content">
+        <div class="col-sm-4 col-md-4 col-lg-4 content">
           <div class="icon">
             <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
           </div>
@@ -53,8 +54,9 @@
         <div class="container-fluid elephant">
             <div class="row">
               <div class="col-lg-12 elephant__col">
-                <h1>You're the  future</h1>
-                <a href="#" class="elephant__button">Find out how</a>
+                <h1>We Build Your Dreams</h1>
+                <p>Don't let your dreams just be dreams.</p>
+                <a href="#" class="elephant__button">Make Your Dream</a>
               </div>
 
             </div>

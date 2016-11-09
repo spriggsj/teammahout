@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 socialmedia__icons">
+      <div class="col-sm-4 col-lg-8 socialmedia__icons">
             <div class="col-sm-3">
                 <a href="https://www.facebook.com/TeamMahout/?fref=ts"><i class="fa fa-facebook" aria-hidden="true"><span>facebook</span></i></a>
             </div>
@@ -44,7 +44,7 @@
         </p>
       </div>
       <div class="col-sm-1 mahout__footer__logo">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mahoutwhitelogo.png">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whitelogo.svg">
       </div>
     </div>
 
