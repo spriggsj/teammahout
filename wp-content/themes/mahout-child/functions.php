@@ -14,6 +14,11 @@ add_action('wp_enqueue_scripts','jk_theme_styles');
 add_action('wp_enqueue_scripts', 'my_method');
 function my_method() {
     //sets it
+	wp_register_script('stellar-js', get_stylesheet_directory_uri() . '/js/stellar.min.js', array('jquery'), true);
+	wp_enqueue_script('stellar-js');
+
+
+
 
 	wp_register_script('custom-js', get_stylesheet_directory_uri() . '/scripts/custom.js',array('jquery'), true );
 	// fires it

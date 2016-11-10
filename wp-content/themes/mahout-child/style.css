@@ -52,8 +52,8 @@ time, mark, audio, video {
 
 
 
- h1{
-	 font-family: 'Oswald', sans-serif;
+ h1, h3{
+	 font-family: 'Raleway', sans-serif !important;
  }
 
  p{
@@ -238,6 +238,7 @@ div#main{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
+		background-color: white;
 }
 
 div#main img{
@@ -250,7 +251,7 @@ div#main img{
 div#page img{
 	width:110px;
 	margin-left: 200px;
-    
+
 }
 div#page h1{
 	display:none;
@@ -279,16 +280,36 @@ div#page h1{
 }
 
 .mountain__container{
-    height:390px;
+		/*position: relative;
+		overflow: hidden;*/
+		height: 320px;
 		background-attachment: fixed;
-    background-image: url(./img/mountains.svg);
+		background-image: url(./img/mountains.svg);
     background-repeat:no-repeat;
     background-size:cover;
+		background-position: center center;
     -webkit-background-size:cover;
     -o-background-size:cover;
     -moz-background-size:cover;
 
 }
+
+/* this is a work around for parallax you need to comment out the background cover and the backgorund fix and uncomment the overlow hidden and position realative
+
+	.mountain__container:before{
+	content: '';
+	position: fixed;
+	height:390px;
+	width: 100%;
+	top:0;
+	left: 0;
+	background-image: url(./img/mountains.svg);
+	background-size: cover;
+	z-index: -1;
+	will-change:transform;
+
+
+}*/
 
 .button{
 	background-color: #fff;
@@ -308,6 +329,8 @@ div#page h1{
 .services{
     padding: 130px 0;
 		text-align: center;
+		background-color: white;
+		min-width: 100%;
 }
 
 
@@ -495,6 +518,90 @@ footer hr{
 }
 
 
+.about__whoweare {
+    background: linear-gradient(rgba(0, 185, 235, 0.42), rgba(119, 219, 219, 0.34)), url(./img/fog.jpg);
+	height: 450px;
+	background-position: -191px 58%;
+	padding: 30px 0;
+	background-attachment: fixed;
+	margin-top: 30px;
+
+}
+
+.about__whoweare h1{
+	color: rgba(255, 255, 255, 0.72);
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 110px;
+	position: relative;
+	top: 50px;
+
+}
+
+.about__whoweare p{
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	margin: 80px  80px 0 80px;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.39);
+}
+
+.about__content{
+	padding: 70px 0;
+}
+
+.about__content p{
+	margin: 0 100px;
+	font-size: 15px;
+}
+
+.about__content h3 a{
+	margin: 20px 100px;
+	color:#19a0c1;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+
+.about__content h1{
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	color:#19a0c1;
+}
+
+.community__section{
+	background: linear-gradient(rgba(51,51,51,.5), rgba(21,28,29,0.7)), url(./img/elephantcommunity.jpg);
+	height: 420px;
+	background-position: -191px 58%;
+	padding: 30px 0;
+	background-attachment: fixed;
+	margin-top: 30px;
+}
+
+.community__section h1{
+	color: rgba(255, 255, 255, 0.72);
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 90px;
+	position: relative;
+	top: 50px;
+}
+
+.community__section p{
+	margin: 70px 100px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+/*medai Queries */
 @media(max-width:1024px){
 	#main h1 {
 		font-size: 13px;
@@ -523,6 +630,8 @@ footer hr{
 	.services p {
     margin: 0 9px;
 	}
+
+
 }
 
 @media(max-width:425px) {
@@ -590,6 +699,9 @@ footer{
     left: 10px;
 
 }
+
+
+
 .mountain__container p {
     font-size: 14px;
 }
@@ -633,10 +745,4 @@ footer{
     left: 106px;
 }
 
-}
-.aboutTop{
-	padding-top: 20px;
-}
-.aboutBottom{
-	padding-bottom: 20px;
 }
