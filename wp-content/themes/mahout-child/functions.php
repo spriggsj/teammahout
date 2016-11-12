@@ -14,13 +14,10 @@ add_action('wp_enqueue_scripts','jk_theme_styles');
 add_action('wp_enqueue_scripts', 'my_method');
 function my_method() {
     //sets it
-	wp_register_script('stellar-js', get_stylesheet_directory_uri() . '/js/stellar.min.js', array('jquery'), true);
-	wp_enqueue_script('stellar-js');
 
+// wp_register_script('gallery-metabox', get_stylesheet_directory_uri() . '/js/gallery-metabox.js',array('jquery'),true);
 
-
-
-	wp_register_script('custom-js', get_stylesheet_directory_uri() . '/scripts/custom.js',array('jquery'), true );
+wp_register_script('custom-js', get_stylesheet_directory_uri() . '/scripts/custom.js',array('jquery'), true );
 	// fires it
 	wp_enqueue_script('custom-js'); //enqueue it
 
@@ -48,5 +45,13 @@ wp_enqueue_style('jasny-bootstrap-css', get_template_directory_uri() . '/css/jas
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
+
+
+add_theme_support( 'post-thumbnails' );
+
+// require_once 'gallery-metabox/gallery.php';
+//
+// $images = get_post_meta($post->ID, 'vdw_gallery_id', true);
+
 
 ?>
