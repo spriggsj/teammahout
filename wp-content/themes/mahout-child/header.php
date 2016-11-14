@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>Team Mahout</title>
 <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:100,300,300i,400" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <?php wp_head(); ?>
 
 </head>
 
-<header>
+<header class="">
+
   <div id="wrapper">
 
       <!-- Sidebar -->
@@ -33,9 +35,10 @@
       </button>
   </div>
 
-<div id="main">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mahoutlogo.png">
-<h1>With Team Mahout Enhance Your Company With Our Web Development, Marketing, and Design</h1>
+
+<div id="<?php if (is_front_page()){echo 'main';} else { echo "page"; }?>">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mahoutlogo.svg">
+<h1>Allow Team Mahout To Enhance Your Company With Our Web Development, Marketing, and Design Solutions</h1>
 </div>
 
 </header>

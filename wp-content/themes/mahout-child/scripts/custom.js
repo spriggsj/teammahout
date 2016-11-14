@@ -3,6 +3,8 @@
 
 
 $(document).ready(function () {
+
+  // The on click for my nav hamburger
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
      isClosed = false;
@@ -29,9 +31,25 @@ $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
   });
+
+if($(window).width() < 1000){
+  $('.mountain__container').each(function(){
+      $(this).css('background-attachment', 'scroll');
+  });
+
+  $('.about__whoweare').each(function(){
+    $(this).css('background-attachment','scroll');
+  });
+
+  $('.community__section').each(function(){
+    $(this).css('background-attachment', 'scroll');
+  });
+
+
+}
+
+
+
 });
-
-
-
 
   })( jQuery );
