@@ -11,7 +11,8 @@
 
 </head>
 
-<header>
+<header class="">
+
   <div id="wrapper">
 
       <!-- Sidebar -->
@@ -34,7 +35,8 @@
       </button>
   </div>
 
-<div id="main">
+
+<div id="<?php if (is_front_page()){echo 'main';} else { echo "page"; }?>">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mahoutlogo.svg">
 <h1>Allow Team Mahout To Enhance Your Company With Our Web Development, Marketing, and Design Solutions</h1>
 </div>

@@ -52,8 +52,8 @@ time, mark, audio, video {
 
 
 
- h1{
-	 font-family: 'Oswald', sans-serif;
+ h1, h3{
+	 font-family: 'Raleway', sans-serif !important;
  }
 
  p{
@@ -101,11 +101,20 @@ nav#myNavmenu{
 }
 
 .sidebar-nav li a {
-    display: block;
-    color: #ddd;
-    text-decoration: none;
-    padding: 10px 15px 10px 30px;
+	    display: block;
+	    color: #ddd;
+	    text-decoration: none;
+	    padding: 10px 15px 10px 30px;
+	    font-size: 20px;
+			font-family: 'Raleway', sans-serif;
+			text-transform: uppercase;
+
+
 }
+
+
+
+
 
 .sidebar-nav li a:hover,
 .sidebar-nav li a:active,
@@ -113,9 +122,13 @@ nav#myNavmenu{
 .sidebar-nav li.open a:hover,
 .sidebar-nav li.open a:active,
 .sidebar-nav li.open a:focus{
-    color: #19a0c1;
+    color: #ddd;
     text-decoration: none;
     background-color: transparent;
+}
+
+.hamburger.is-open {
+  position: fixed;
 }
 
 .hamburger {
@@ -230,6 +243,9 @@ nav#myNavmenu{
 }
 
 
+
+
+
 /*end of nav styles */
 
 div#main{
@@ -238,6 +254,7 @@ div#main{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
+		background-color: white;
 }
 
 div#main img{
@@ -246,6 +263,14 @@ div#main img{
     left: 100px;
     top: 40px;
 
+}
+div#page img{
+	width:110px;
+	margin-left: 200px;
+
+}
+div#page h1{
+	display:none;
 }
 
 #main h1{
@@ -271,16 +296,36 @@ div#main img{
 }
 
 .mountain__container{
-    height:390px;
+		/*position: relative;
+		overflow: hidden;*/
+		height: 320px;
 		background-attachment: fixed;
-    background-image: url(./img/mountains.svg);
+		background-image: url(./img/mountains.svg);
     background-repeat:no-repeat;
     background-size:cover;
+		background-position: center center;
     -webkit-background-size:cover;
     -o-background-size:cover;
     -moz-background-size:cover;
 
 }
+
+/* this is a work around for parallax you need to comment out the background cover and the backgorund fix and uncomment the overlow hidden and position realative
+
+	.mountain__container:before{
+	content: '';
+	position: fixed;
+	height:390px;
+	width: 100%;
+	top:0;
+	left: 0;
+	background-image: url(./img/mountains.svg);
+	background-size: cover;
+	z-index: -1;
+	will-change:transform;
+
+
+}*/
 
 .button{
 	background-color: #fff;
@@ -300,6 +345,8 @@ div#main img{
 .services{
     padding: 130px 0;
 		text-align: center;
+		background-color: white;
+		min-width: 100%;
 }
 
 
@@ -487,18 +534,180 @@ footer hr{
 }
 
 
+.about__whoweare {
+    background: linear-gradient(rgba(0, 185, 235, 0.42), rgba(119, 219, 219, 0.34)), url(./img/fog.jpg);
+	height: 450px;
+	background-position: -191px 58%;
+	padding: 30px 0;
+	background-attachment: fixed;
+	margin-top: 30px;
+
+}
+
+.about__whoweare h1{
+	color: rgba(255, 255, 255, 0.72);
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 110px;
+	position: relative;
+	top: 50px;
+
+}
+
+.about__whoweare p{
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	margin: 80px  80px 0 80px;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.39);
+	font-weight: 700;
+}
+
+.about__content{
+	padding: 70px 0;
+}
+
+.about__content p{
+	margin: 0 100px;
+	font-size: 15px;
+}
+
+.about__content h3 a{
+	margin: 20px 100px;
+	color:#19a0c1;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+
+.about__content h1{
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	color:#19a0c1;
+}
+
+.community__section{
+	background:
+	linear-gradient(
+		rgba(51,51,51,0.5),
+		rgba(21,28,29,0.7)
+		),
+		url('./img/elephantcommunity.jpg');
+	height: 420px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-position: -191px 58%;
+	padding: 30px 0;
+	background-attachment: fixed;
+	margin-top: 30px;
+}
+
+.community__section h1 {
+    color: rgba(255, 255, 255, 0.72);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 72px;
+    position: relative;
+    top: 38px;
+}
+
+.community__section p{
+	margin: 70px 100px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+.single__post{
+	padding: 40px 0;
+}
+.single__post h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	color:#19a0c1;
+}
+
+.single__post .more__posts{
+	font-size:35px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+.single__post hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 3px solid #eee;
+}
+
+.related__category a h3{
+	text-transform: uppercase;
+	font-size: 16px;
+	color:#19a0c1;
+
+}
+
+.blog__content{
+	padding: 75px 0;
+	border-bottom: 1px solid gray;
+}
+
+.blog__content h1{
+	text-transform: uppercase;
+	font-size: 25px;
+
+
+}
+
+.blog__content img{
+	height: 300px;
+	object-fit: cover;
+}
+
+.blog__content p{
+	height: 300px;
+}
+
+.blog__paragraph{
+	padding-top: 50px;
+	height: 350px;
+}
+
+.block{
+	border-bottom: 1px solid gray;
+}
+
+
+
+/*medai Queries */
 @media(max-width:1024px){
 	#main h1 {
 		font-size: 13px;
     left: 112px;
     width: 792px;
 	}
+	.mountain__container p {
+    padding-top: 69px;
+}
 	.elephant h1 {
     font-size: 43px;
 	}
 	.elephant__col p {
     font-size: 28px;
 	}
+
+	/* about page*/
+
+
+
+
 }
 
 
@@ -515,9 +724,31 @@ footer hr{
 	.services p {
     margin: 0 9px;
 	}
+
+	/*about page */
+	.about__whoweare h1 {
+    font-size: 91px;
+}
+.community__section h1 {
+    top: 2px;
+}
+
+.community__section p {
+    margin: 14px 100px;
+}
+
+.about__content h1 {
+    font-size: 42px;
+}
+
 }
 
 @media(max-width:425px) {
+	.navmenu, .navbar-offcanvas {
+    width: 257px !important;
+
+}
+
 	div#main {
     height: 480px;
 	}
@@ -570,35 +801,73 @@ footer hr{
 footer{
 	height: 100%;
 }
+div#page img {
+    margin-left: 60px;
+}
+
+.about__whoweare h1 {
+    font-size: 46px;
+}
+.about__whoweare p {
+    margin: 67px 30px 0 30px;
+
+}
+.about__content {
+    padding: 38px 0;
+}
+.about__content p {
+    margin: 0 25px;
+}
+.community__section h1 {
+    font-size: 43px;
+
+}
+
+.community__section p {
+    margin: 14px 22px;
+}
+
+.about__content h1 {
+    font-size: 27px;
+}
+
 
 }
 
 @media(max-width:375px){
+	.navmenu, .navbar-offcanvas {
+	    width: 219px !important;
+	}
+
 	div#main img {
     width: 72px;
 }
 	#main h1 {
 		top: 203px;
-    left: 10px;
+    left: 39px;
 
 }
+
 .mountain__container p {
     font-size: 14px;
 }
 
 .elephant h1 {
-    font-size: 23px;
+	font-size: 21px;
+	text-align: center;
+
 }
 .elephant__col p {
     font-size: 18px;
+		text-align: center;
 }
 
 .button {
-    left: 88px;
+    left: 118px;
 }
 
 .elephant {
-    height: 301px;
+    height: 357px;
 }
 
 .elephant__col {
@@ -623,6 +892,64 @@ footer{
     position: relative;
     top: 17px;
     left: 106px;
+}
+
+.about__whoweare p {
+    font-size: 13px;
+}
+
+.about__content h1 {
+    font-size: 23px;
+}
+
+.about__content h3 a {
+    margin: 20px 8px;
+		font-size: 18px;
+}
+
+
+
+}
+
+@media(max-width:320px){
+	.hamburger {
+    right: 42px;
+}
+
+div#main img {
+    left: 36px;
+
+}
+	#main h1 {
+    left: 7px;
+}
+.mountain__container {
+    height: 404px;
+}
+
+.mountain__container p {
+    margin: 0px 16px 0px 20px;
+}
+
+.button {
+    left: 92px;
+}
+
+.about__whoweare h1 {
+    font-size: 40px;
+}
+
+.about__content h1 {
+    font-size: 20px;
+}
+
+.about__content h3 a {
+    margin: 20px 12px;
+    font-size: 16px;
+}
+
+.community__section p {
+    font-size: 13px;
 }
 
 }

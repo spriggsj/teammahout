@@ -3,20 +3,22 @@
 
 
 
+    <div class="wrapper">
+      <div id="help" class="container-fluid mountain__container">
+              <div class="row">
 
-        <div class="container-fluid mountain__container">
-                <div class="row">
+                <div class="col-lg-12">
+                      <p>
+                      Usually, a mahout starts as a boy when he is assigned an elephant early in its life. They remain bonded to each other throughout their lives..
+                      Our in house custom designer will transform your ideas into a beautifully functioning and fluid site. Team Mahout utilizes an intricate process to evaluate your vision and incorporates proven design principles to ensure your site is consistent with your unique brand.
 
-                  <div class="col-lg-12">
-                        <p>
-                        Usually, a mahout starts as a boy when he is assigned an elephant early in its life. They remain bonded to each other throughout their lives..
-                        Our in house custom designer will transform your ideas into a beautifully functioning and fluid site. Team Mahout utilizes an intricate process to evaluate your vision and incorporates proven design principles to ensure your site is consistent with your unique brand.
+                       </p>
+                       <a href="#" class="button">Learn More</a>
+                </div>
+          </div>
+      </div>
+    </div>
 
-                         </p>
-                         <a href="#" class="button">Learn More</a>
-                  </div>
-        		</div>
-        </div>
 
 		<div class="container services">
       <div class="row">
@@ -54,9 +56,9 @@
         <div class="container-fluid elephant">
             <div class="row">
               <div class="col-lg-12 elephant__col">
-                <h1>We Build Your Dreams</h1>
-                <p>Don't let your dreams just be dreams.</p>
-                <a href="#" class="elephant__button">Make Your Dream</a>
+                <h1>We Build Dreams</h1>
+                <p>Let Team Mahout Build Your Dream</p>
+                <a href="#" class="elephant__button">Let's Work Together</a>
               </div>
 
             </div>
