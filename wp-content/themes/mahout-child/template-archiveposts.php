@@ -13,9 +13,12 @@ Template Name: Archives Posts
 
 
 <?php
+
+  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
   $args = [
     'post_type' => 'post',
     'posts_per_page' => 5,
+    'paged' => $paged,
   ];
 
   $blog_query = new WP_Query($args);
@@ -23,25 +26,44 @@ Template Name: Archives Posts
     if($blog_query->have_posts()) : while($blog_query->have_posts()) : $blog_query->the_post();
 ?>
 
-    <div class="col-lg-6 ">
-      <?php the_post_thumbnail('full',['class'=>'img-responsive']);?>
+      <a href="<?php the_permalink();?>">
+      <div class="col-lg-6 col-xs-12">
+        <?php the_post_thumbnail('full',['class'=>'img-responsive']);?>
 
-    </div>
-    <div class="col-lg-6 blog__paragraph ">
-        <h1><?php the_title();?></h1>
-        <?php the_excerpt();?>
-
-
-    </div>
+      </div>
+      <div class="col-lg-6 blog__paragraph ">
 
 
+          <h1><?php the_title();?></h1>
+          <?php the_time('F j, Y'); ?>
 
+          <?php the_excerpt();?>
+          <a href="<?php the_permalink(); ?>">Read More<span>›</span></a>
+      </div>
+      </a>
+      <div class="clear"></div>
+      <hr>
 
-
-  <?php endwhile;endif; ?>
-  <?php wp_reset_postdata(); ?>
-
+  <?php endwhile;?>
+  </div>
 </div>
-</div>
+
+  <div class="container numbers">
+    <div class="row">
+      <div class="col-lg-12">
+        <?php
+          if (function_exists(custom_pagination)) {
+            custom_pagination($blog_query->max_num_pages,"",$paged);
+          }
+        ?>
+      </div>
+    </div>
+  </div>
+
+<?php wp_reset_postdata(); ?>
+
+<?php else:  ?>
+  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
 
 <?php get_footer(); ?>
