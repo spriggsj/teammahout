@@ -50,7 +50,9 @@ time, mark, audio, video {
 /* end of reset */
 
 
-
+a{
+	text-decoration: none!important;
+}
 
  h1, h3{
 	 font-family: 'Raleway', sans-serif !important;
@@ -248,6 +250,11 @@ nav#myNavmenu{
 
 /*end of nav styles */
 
+#page img {
+    left: -110px;
+    position: relative;
+}
+
 div#main{
     height:705px;
     background-image: url(./img/mahoutcalltoaction.jpg);
@@ -296,8 +303,6 @@ div#page h1{
 }
 
 .mountain__container{
-		/*position: relative;
-		overflow: hidden;*/
 		height: 320px;
 		background-attachment: fixed;
 		background-image: url(./img/mountains.svg);
@@ -310,22 +315,6 @@ div#page h1{
 
 }
 
-/* this is a work around for parallax you need to comment out the background cover and the backgorund fix and uncomment the overlow hidden and position realative
-
-	.mountain__container:before{
-	content: '';
-	position: fixed;
-	height:390px;
-	width: 100%;
-	top:0;
-	left: 0;
-	background-image: url(./img/mountains.svg);
-	background-size: cover;
-	z-index: -1;
-	will-change:transform;
-
-
-}*/
 
 .button{
 	background-color: #fff;
@@ -649,14 +638,21 @@ footer hr{
 
 .related__category a h3{
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 15px;
 	color:#19a0c1;
 
 }
 
 .blog__content{
 	padding: 75px 0;
-	border-bottom: 1px solid gray;
+
+}
+
+.blog__content hr{
+  margin-bottom: 53px;
+	margin-top: 20px;
+  border: 1px solid #eee;
+
 }
 
 .blog__content h1{
@@ -669,20 +665,57 @@ footer hr{
 .blog__content img{
 	height: 300px;
 	object-fit: cover;
+
 }
 
-.blog__content p{
-	height: 300px;
-}
+
 
 .blog__paragraph{
 	padding-top: 50px;
 	height: 350px;
 }
 
-.block{
-	border-bottom: 1px solid gray;
+.blog__content a span{
+	  font-size: 44px;
+	  font-weight: 100;
+	  line-height: 15px;
+	  float: right;
+	  display: block;
+	  margin-left: 0px;
 }
+
+.blog__paragraph a{
+	float: left;
+}
+
+.page-numbers {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 2px 0 0;
+	border: 1px solid #eee;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 2px;
+	font-weight: 600;
+}
+.page-numbers.current,
+a.page-numbers:hover {
+	background: #f9f9f9;
+}
+
+.numbers {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 17px;
+		color: #19a0c1;
+}
+
+
+.clear{
+	clear: both;
+}
+
+
 
 
 
@@ -832,6 +865,24 @@ div#page img {
 }
 
 
+.related__category a h3 {
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.stuff{
+	text-align: center;
+		margin-left: 64px;
+}
+
+.stuff img{
+		margin-left: 63px;
+}
+div#page img {
+    margin-left: 151px;
+}
+
+
 }
 
 @media(max-width:375px){
@@ -907,7 +958,17 @@ div#page img {
 		font-size: 18px;
 }
 
+.stuff{
+		margin-left: 40px;
+}
 
+.stuff img {
+    margin-left: 48px;
+}
+
+.single__post h1 {
+    font-size: 46px;
+}
 
 }
 
@@ -950,6 +1011,13 @@ div#main img {
 
 .community__section p {
     font-size: 13px;
+}
+
+.stuff img {
+    margin-left: 23px;
+}
+.single__post h1 {
+    font-size: 37px;
 }
 
 }
