@@ -14,20 +14,25 @@ Template Name: Archives Posts
 
 <?php
 
+$category = get_the_category();
+$custom_post_category = $category[0]->term_id;
   $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
   $args = [
     'post_type' => 'post',
-    'posts_per_page' => 5,
+    'posts_per_page' => 2,
+    'cat' => $custom_post_category,
     'paged' => $paged,
+    'category_name'=> $catName,
+
   ];
 
-  $blog_query = new WP_Query($args);
+  $category_query = new WP_Query($args);
 
-    if($blog_query->have_posts()) : while($blog_query->have_posts()) : $blog_query->the_post();
+    if($category_query->have_posts()) : while($category_query->have_posts()) : $category_query->the_post();
 ?>
 
       <a href="<?php the_permalink();?>">
-      <div class="col-lg-6 col-xs-">
+      <div class="col-lg-6 col-xs-12">
         <?php the_post_thumbnail('full',['class'=>'img-responsive']);?>
 
       </div>
@@ -48,17 +53,21 @@ Template Name: Archives Posts
   </div>
 </div>
 
-  <div class="container numbers">
-    <div class="row">
-      <div class="col-lg-12">
-        <?php
-          if (function_exists(custom_pagination)) {
-            custom_pagination($blog_query->max_num_pages,"",$paged);
-          }
-        ?>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 numbers">
+      <?php
+      the_posts_pagination( array(
+      	'mid_size' => 2,
+      	'prev_text' => __( 'Back', 'textdomain' ),
+      	'next_text' => __( 'Next', 'textdomain' ),
+      ) );
+
+      ?>
+
     </div>
   </div>
+</div>
 
 <?php wp_reset_postdata(); ?>
 

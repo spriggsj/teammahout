@@ -102,8 +102,8 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
     'end_size'        => 1,
     'mid_size'        => $pagerange,
     'prev_next'       => True,
-    'prev_text'       => __('&laquo;'),
-    'next_text'       => __('&raquo;'),
+    'prev_text'       => __('Back'),
+    'next_text'       => __('Next'),
     'type'            => 'plain',
     'add_args'        => false,
     'add_fragment'    => ''
@@ -113,11 +113,22 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 
   if ($paginate_links) {
     echo "<nav class='custom-pagination'>";
-      echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
       echo $paginate_links;
     echo "</nav>";
   }
 
 }
+
+
+
+
+function custom_ppp( $query ) {
+    if ( !is_admin() && $query->is_category() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', '5' );
+    }
+}
+add_action( 'pre_get_posts', 'custom_ppp' );
+
+
 
 ?>
