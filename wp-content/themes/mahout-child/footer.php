@@ -29,19 +29,32 @@
         <p> All rights reserved</p>
       </div>
       <div class="col-sm-3 ourstory">
+
+        <?php
+          $args = [
+            'post_type' => 'post',
+            'posts_per_page' => 1,
+            'tax_query' => [
+              'taxonomy' => 'category',
+            ],
+          ];
+            $footer_query = new WP_Query($args);
+
+            if($footer_query->have_posts()) : while($footer_query->have_posts()) : $footer_query->the_post();
+
+
+
+
+          ?>
+
+
+        <?php endwhile; endif; wp_reset_postdata(); ?>
+
         <h1>our stories</h1>
-        <p>
-          Featured
-        </p>
-        <p>
-          Start Ups
-        </p>
-        <p>
-          Technology
-        </p>
-        <p>
-          Company News
-        </p>
+        <ul>
+          <?php wp_list_categories('title_li='); ?>
+        </ul>
+    
       </div>
       <div class="col-sm-1 mahout__footer__logo">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whitelogo.svg">

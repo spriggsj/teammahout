@@ -502,8 +502,11 @@ footer hr{
 	font-size: 15px;
 }
 
-.ourstory p{
+.ourstory li{
 	font-size:15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.3;
 }
 
 .mahout__footer__logo img{
@@ -715,6 +718,87 @@ a.page-numbers:hover {
 	clear: both;
 }
 
+label{
+	color: #31708f;
+}
+
+input.wpcf7-form-control.wpcf7-submit.btn.btn-primary {
+	background: #fff;
+	color: #31708f;
+	border: none;
+	margin-left: 11px;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+
+.single__letter p{
+	font-size: 28px;
+	line-height: 1;
+	margin: 0 11px;
+	color: #31708f;
+
+}
+
+.single__letter{
+	padding: 50px 0;
+
+}
+
+.photo {
+    background: linear-gradient(#fff, rgba(25, 160, 193, 0.49)), url(./img/fognosky.png);
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.contact__social{
+	font-size: 24px;
+
+}
+
+
+
+.contact__social a{
+	color: #31708f;
+}
+
+.contact__info h1{
+	text-transform: uppercase;
+	color: #31708f;
+}
+
+.contact__info i{
+	margin-right: 8px;
+}
+
+.contact__info p{
+	font-size: 19px;
+	color: #31708f;
+}
+
+.contact__info{
+	margin-top: 35px;
+
+}
+
+.contact__info hr{
+	border-top: 2px solid #31708f;
+}
+
+.contact__form h1{
+	margin-left: 11px;
+	text-transform: uppercase;
+	color: #31708f;
+}
+
+.contact__form{
+	padding: 30px  0;
+}
+
+h2.screen-reader-text{
+	display: none;
+}
+
 
 
 
@@ -736,7 +820,9 @@ a.page-numbers:hover {
     font-size: 28px;
 	}
 
-	/* about page*/
+	.contact__info{
+		display: none;
+	}
 
 
 
@@ -882,6 +968,13 @@ div#page img {
     margin-left: 151px;
 }
 
+.single__letter p {
+    font-size: 23px;
+    line-height: 1;
+    margin: 0 11px;
+    color: #31708f;
+}
+
 
 }
 
@@ -1018,6 +1111,10 @@ div#main img {
 }
 .single__post h1 {
     font-size: 37px;
+}
+
+.single__letter p {
+    line-height: 1.2;
 }
 
 }
