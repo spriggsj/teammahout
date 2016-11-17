@@ -14,21 +14,9 @@ Template Name: Archives Posts
 
 <?php
 
-$category = get_the_category();
-$custom_post_category = $category[0]->term_id;
-  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-  $args = [
-    'post_type' => 'post',
-    'posts_per_page' => 2,
-    'cat' => $custom_post_category,
-    'paged' => $paged,
-    'category_name'=> $catName,
 
-  ];
 
-  $category_query = new WP_Query($args);
-
-    if($category_query->have_posts()) : while($category_query->have_posts()) : $category_query->the_post();
+  if (have_posts() ) : while (have_posts() ) : the_post();
 ?>
 
       <a href="<?php the_permalink();?>">
