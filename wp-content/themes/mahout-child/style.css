@@ -799,6 +799,39 @@ h2.screen-reader-text{
 	display: none;
 }
 
+.clients{
+	color:#19a0c1;
+	text-transform: uppercase;
+	margin: 0 0 0 83px;
+	float: left;
+
+}
+
+
+
+
+.client__section{
+	padding: 55px 0;
+}
+
+.client__content hr{
+	  border-top: 5px solid #eee;
+		margin-top: 6px;
+}
+
+.client__content img{
+	margin-bottom: 12px;
+}
+
+.client__links{
+	float: right;
+	margin: 16px 60px 0px 0px;
+
+}
+
+
+
+
 
 
 
