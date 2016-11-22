@@ -707,7 +707,7 @@ a.page-numbers:hover {
 	background: #f9f9f9;
 }
 
-.numbers {
+.numbers{
     padding: 20px 0;
     text-align: center;
     font-size: 17px;
@@ -804,7 +804,6 @@ h2.screen-reader-text{
 	color:#19a0c1;
 	text-transform: uppercase;
 	margin: 0 0 0 83px;
-	float: left;
 
 }
 
@@ -1010,6 +1009,12 @@ div#page img {
     color: #31708f;
 }
 
+.clients{
+	margin: 0 0 0 10px;
+	font-size: 26px;
+}
+
+
 
 }
 
@@ -1150,6 +1155,11 @@ div#main img {
 
 .single__letter p {
     line-height: 1.2;
+}
+
+.clients {
+    margin: 0 0 0 10px;
+    font-size: 21px;
 }
 
 }
