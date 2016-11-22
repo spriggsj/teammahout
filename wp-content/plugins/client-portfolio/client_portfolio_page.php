@@ -8,10 +8,6 @@
   <?php $images = get_post_meta(get_the_ID(), 'vdw_gallery_id', true); ?>
 
 <section class="client__section">
-  <div class="client__links">
-    <?php previous_post_link('%link', 'Previous Client Portfolio'); ?> |
-    <?php next_post_link('%link', 'Next Client Portfolio'); ?>
-  </div>
 
   <h1 class="clients"><?php the_title();?></h1>
   <div class="clear"></div>
@@ -30,6 +26,11 @@
       </div>
       <div class="col-lg-6">
           <?php the_content();?>
+          <div class="client__links">
+            <?php previous_post_link('%link', 'Previous Client Portfolio'); ?> |
+            <?php next_post_link('%link', 'Next Client Portfolio'); ?>
+          </div>
+
       </div>
       </div>
     </div>
