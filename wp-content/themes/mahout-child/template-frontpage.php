@@ -13,7 +13,7 @@
                       Our in house custom designer will transform your ideas into a beautifully functioning and fluid site. Team Mahout utilizes an intricate process to evaluate your vision and incorporates proven design principles to ensure your site is consistent with your unique brand.
 
                        </p>
-                       <a href="#" class="button">Learn More</a>
+                       <a href="/about/" class="button">Learn More</a>
                 </div>
           </div>
       </div>
@@ -58,7 +58,7 @@
               <div class="col-lg-12 elephant__col">
                 <h1>We Build Dreams</h1>
                 <p>Let Team Mahout Build Your Dream</p>
-                <a href="#" class="elephant__button">Let's Work Together</a>
+                <a href="/contact-us/" class="elephant__button">Let's Work Together</a>
               </div>
 
             </div>
